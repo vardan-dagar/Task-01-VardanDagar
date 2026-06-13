@@ -42,16 +42,14 @@ def bot_reply(message):
     else:
         return " Sorry, I don't understand that. Please try another question."
 
-# Chatbot Header
 print("=" * 60)
 print("🤖 SMARTBOT - RULE BASED CHATBOT")
 print("🚀 Built using Python, Control Flow & Decision Making")
 print("=" * 60)
 print("\nType 'exit/bye/quit' to end the conversation.\n")
 
-# Continuous Chat Loop
 while True:
-    user_input = input("👤 You: ")
+    user_input = input(" You: ")
 
     if user_input.lower() in ["exit", "bye", "quit"]:
         print(f"🤖 SmartBot [{datetime.now().strftime('%H:%M:%S')}]:")
